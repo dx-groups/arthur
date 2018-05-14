@@ -1,8 +1,13 @@
 {
   "name": "arthur",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "./src/index.js",
   "repository": "https://github.com/xubaoshi/arthur.git",
   "author": "xubaoshi <948869516@qq.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint ./src",
+    "lint-fix": "eslint --fix ./src",
+    "pub": "bash scripts/publish.sh"
+  }
 }
