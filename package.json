@@ -1,0 +1,8 @@
+{
+  "name": "arthur",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/xubaoshi/arthur.git",
+  "author": "xubaoshi <948869516@qq.com>",
+  "license": "MIT"
+}
