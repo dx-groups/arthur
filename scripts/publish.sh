@@ -14,7 +14,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
   echo "Releasing $VERSION ..."
 
   if [[ -z $SKIP_TESTS ]]; then
-    npm run lint
+    npm run lint-fix
     # npm run flow
   fi
 
@@ -27,7 +27,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
   # fi
 
   # build
-  VERSION=$VERSION npm run build
+  # VERSION=$VERSION npm run build
 
   
   if [[ -z $RELEASE_TAG ]]; then

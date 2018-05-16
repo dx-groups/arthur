@@ -3,11 +3,20 @@
   "version": "0.0.1",
   "main": "./src/index.js",
   "repository": "https://github.com/xubaoshi/arthur.git",
-  "author": "xubaoshi <948869516@qq.com>",
+  "author": "elephant-fe",
   "license": "MIT",
   "scripts": {
     "lint": "eslint ./src",
     "lint-fix": "eslint --fix ./src",
     "pub": "bash scripts/publish.sh"
-  }
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "pre-commit": "^1.2.2"
+  },
+  "pre-commit": [
+    "lint"
+  ]
 }
