@@ -1,1 +1,1 @@
-console.log('this is arthur!')
+module.exports = 'this is arthur'
