@@ -23,11 +23,7 @@ if (buildCode === 1) {
   process.exit(1)
 }
 
-const { code: publishCode } = shell.exec('npm publish')
-if (publishCode === 1) {
-  chalk.red('Failed: npm publish')
-  process.exit(1)
-}
+shell.exec('npm publish')
 
 if (!shell.which('git')) {
   chalk.red('Sorry,this script requires git')
