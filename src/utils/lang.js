@@ -2,10 +2,8 @@
 /** Used to check objects for own properties. */
 // const hasOwnProperty = Object.prototype.hasOwnProperty;
 
-function isObject(value) {
-  const type = typeof value
-  return value !== null && (type === 'object' || type === 'function')
-}
+const keyList = Object.keys
+const hasProp = Object.prototype.hasOwnProperty
 
 function isArray(value) {
   const _isArray = Array.isArray || (_arg => Object.prototype.toString.call(_arg) === '[object Array]')
@@ -18,26 +16,6 @@ function isEmpty(value) {
   if (isArray(value)) return value.length === 0
 
   return false
-}
-
-function isString(value) {
-  return Object.prototype.toString.call(value) === '[object String]'
-}
-
-function objectHandler(obj, handler) {
-  const finalObj = Object.keys(obj)
-    .reduce((a, c) => ({
-      ...a,
-      [c]: handler(obj[c])
-    }), {})
-  return finalObj
-}
-
-function trim(str) {
-  if (Object.prototype.toString.call(str) === '[object String]') {
-    return str.trim()
-  }
-  return str
 }
 
 function baseGet(object, path) {
@@ -94,8 +72,6 @@ function get(object, path, defaultValue) {
  * @param {*} b
  */
 function equal(a, b) {
-  const keyList = Object.keys
-  const hasProp = Object.prototype.hasOwnProperty
   if (a === b) return true
 
   let arrA = isArray(a)
@@ -148,13 +124,9 @@ function deepEqual(a, b) {
 }
 
 export {
-  isString,
-  isObject,
   isArray,
-  isEmpty,
-  objectHandler,
-  trim,
   get,
   equal,
   deepEqual,
+  isEmpty,
 }
