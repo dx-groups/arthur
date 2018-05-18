@@ -1,0 +1,21 @@
+{
+  "name": "arthur-example",
+  "version": "0.0.1",
+  "description": "arthur example",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "and": "^0.0.3",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-router-dom": "^4.2.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-import": "^1.7.0",
+    "babel-preset-react-app": "^3.1.1",
+    "babel-runtime": "^6.26.0",
+    "parcel": "^1.8.1"
+  }
+}

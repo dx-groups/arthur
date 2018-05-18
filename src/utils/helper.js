@@ -171,7 +171,7 @@ function genPagination(page = DefaultPage, showSizeChanger = true) {
 
 // const PageHelper = {}
 
-export {
+export default {
   RouteHelper,
   MenuHelper,
   ReduckHelper,

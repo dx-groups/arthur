@@ -1,7 +1,7 @@
-import arthur, { connect as connectArthur } from '../lib/arthur'
-import arthurHelp from '../lib/utils/helper'
+import arthur, { connect as arthurConnect } from '../lib/arthur'
+import arthurHelper from '../lib/utils/helper'
 
 export default arthur
-export const connect = connectArthur
-export const help = arthurHelp
+export const connect = arthurConnect
+export const helper = arthurHelper
 

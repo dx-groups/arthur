@@ -73,3 +73,7 @@ yarn-error.log*
 .vscode/
 .history/
 *.swp
+
+# parcel
+**/.cache/
+**/dist/
