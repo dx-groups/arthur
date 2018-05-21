@@ -1,5 +1,5 @@
 
-import arthur from 'baoshi-arthur'
+import arthur from 'baoshi-arthur1'
 import { createBrowserHistory } from 'history'
 import Router from './router'
 import arthurModule from '../modules/Arthur/module'
@@ -9,14 +9,20 @@ const app = arthur({
   history: createBrowserHistory()
 })
 
+// init callBack
+app.init(() => dispatch => {
+  
+})
+
+// 2.modules
 app.modules([
   arthurModule,
 ])
 
-// 4. Router
+// 3. Router
 app.router(Router)
 
-// 5. Start
+// 4. Start
 app.start('#root')
 
-export default app._store;  // eslint-disable-line
+export default app._store

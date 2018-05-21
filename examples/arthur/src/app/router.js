@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import { connect } from 'react-redux'
 import {
   Route,
   Switch,
+  Redirect,
 } from 'react-router-dom'
 import { ConnectedRouter } from 'react-router-redux'
 import { LocaleProvider } from 'antd'
@@ -10,22 +10,18 @@ import { LocaleProvider } from 'antd'
 import routes from '../routes'
 import zhCN from 'antd/lib/locale-provider/zh_CN'
 import 'moment/locale/zh-cn'
+import Layout from './layout'
+import * as urls from '../global/urls'
 
 class RouteConfig extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      acceptRoutes: []
-    }
-  }
-
   verifyUser = (match, route, finalRoutes) => {
-    <Layout
-      routes={finalRoutes}
-      match={match}
-      content={route.baseComponent}
-      path={route.path}
-    />
+    return (
+      <Layout
+        routes={finalRoutes}
+        match={match}
+        content={route.baseComponent}
+        path={route.path}
+      />)
   }
 
   render() {
@@ -44,6 +40,7 @@ class RouteConfig extends Component {
                 />
               ))
             }
+            <Redirect exact from='/' to={urls.ARTHUR_PAGE} />
           </Switch>
         </ConnectedRouter>
       </LocaleProvider>
@@ -51,11 +48,4 @@ class RouteConfig extends Component {
   }
 }
 
-const mapStateToProps = state => {
-  return {
-  }
-}
-const mapDispatchToProps = dispatch => ({
-  dispatch
-})
-export default connect(mapStateToProps, mapDispatchToProps)(RouteConfig)
+export default RouteConfig
