@@ -1,7 +1,7 @@
 import { createAction } from 'redux-actions'
 import { message, Tooltip } from 'antd'
 import moment from 'moment'
-import { isEmpty } from './lang'
+import { isEmpty } from '@dx-groups/utils/lang.js'
 
 const SHOW_LIST_SPIN = 'SHOW_LIST_SPIN'
 

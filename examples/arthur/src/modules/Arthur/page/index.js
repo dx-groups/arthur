@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
-import { connect } from 'baoshi-arthur'
+import { connect } from 'baoshi-arthur1'
+import { Link } from 'react-router-dom'
 import Module from './module'
 import BaseModule from '../module'
+import * as urls from '../../../global/urls'
 
 class Page extends Component {
   _handleClick = () => {
@@ -11,7 +13,11 @@ class Page extends Component {
 
   render() {
     return (
-      <div onClick={this._handleClick}>{this.props.data.name}</div>
+      <div>
+        <div onClick={this._handleClick}>{this.props.data.name}</div>
+        <Link to={urls.ARTHUR_PAGE_SUB}>sub</Link>
+      </div>
+     
     )
   }
 }

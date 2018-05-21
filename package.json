@@ -43,6 +43,7 @@
     "lint"
   ],
   "dependencies": {
+    "@dx-groups/utils": "^1.0.0",
     "antd": "^3.5.2",
     "flatten": "^1.0.2",
     "history": "^4.7.2",

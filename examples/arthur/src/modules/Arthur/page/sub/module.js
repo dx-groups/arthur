@@ -10,7 +10,7 @@ export default {
   namespace: 'sub',
 
   state: {
-    name: 'old'
+    name: 'sub'
   },
 
   actions: {

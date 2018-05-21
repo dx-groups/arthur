@@ -1,9 +1,9 @@
 import * as urls from '../../global/urls'
-import { help } from 'baoshi-arthur'
+import { helper } from 'baoshi-arthur1'
 import BaseModule from './'
 
-const genRoute = (path, breadcrumbName, parentPath = urls.HOME) =>
-  help.RouteHelper.genRoute(path, breadcrumbName, BaseModule, parentPath)
+const genRoute = (path, breadcrumbName, parentPath) =>
+  helper.RouteHelper.genRoute(path, breadcrumbName, BaseModule, parentPath)
 
 export default [
   genRoute(urls.ARTHUR, 'ARTHUR'),
