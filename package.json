@@ -1,6 +1,6 @@
 {
-  "name": "baoshi-arthur1",
-  "version": "0.0.1",
+  "name": "@dx-groups/arthur",
+  "version": "1.0.0",
   "main": "./src/index.js",
   "repository": "https://github.com/xubaoshi/arthur.git",
   "author": "elephant-fe",

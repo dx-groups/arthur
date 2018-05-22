@@ -7,7 +7,7 @@
   "dependencies": {
     "@dx-groups/utils": "^1.0.0",
     "and": "^0.0.3",
-    "baoshi-arthur1": "^0.0.1",
+    "@dx-groups/arthur": "^1.0.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-redux": "^5.0.7",
@@ -23,6 +23,6 @@
     "parcel": "^1.8.1"
   },
   "scripts": {
-    "start": "parcel ./src/app/index.html"
+    "start": "parcel index.html"
   }
 }
