@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { connect } from 'baoshi-arthur1'
+import { connect } from '@dx-groups/arthur'
 import { Link } from 'react-router-dom'
 import Module from './module'
 import BaseModule from '../module'
@@ -14,6 +14,7 @@ class Page extends Component {
   render() {
     return (
       <div>
+        <h2>this is arthur page</h2>
         <div onClick={this._handleClick}>{this.props.data.name}</div>
         <Link to={urls.ARTHUR_PAGE_SUB}>sub</Link>
       </div>

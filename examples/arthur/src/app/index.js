@@ -1,5 +1,5 @@
 
-import arthur from 'baoshi-arthur1'
+import arthur from '@dx-groups/arthur'
 import { createBrowserHistory } from 'history'
 import Router from './router'
 import arthurModule from '../modules/Arthur/module'

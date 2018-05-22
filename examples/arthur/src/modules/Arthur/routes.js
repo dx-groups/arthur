@@ -1,5 +1,5 @@
 import * as urls from '../../global/urls'
-import { helper } from 'baoshi-arthur1'
+import { helper } from '@dx-groups/arthur'
 import BaseModule from './'
 
 const genRoute = (path, breadcrumbName, parentPath) =>
