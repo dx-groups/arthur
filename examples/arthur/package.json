@@ -23,6 +23,6 @@
     "parcel": "^1.8.1"
   },
   "scripts": {
-    "start": "parcel src/app/index.html"
+    "start": "parcel ./src/app/index.html"
   }
 }
