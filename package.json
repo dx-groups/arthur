@@ -1,27 +1,25 @@
 {
   "name": "@dx-groups/arthur",
   "version": "1.0.0",
-  "main": "./src/index.js",
+  "main": "index.js",
   "repository": "https://github.com/xubaoshi/arthur.git",
   "author": "elephant-fe",
   "license": "MIT",
   "scripts": {
-    "build": "node scripts/build.js",
-    "pub": "node scripts/publish.js",
+    "build": "rimraf lib && babel src --out-dir lib",
+    "pub": "npm publish --access public --registry=https://registry.npmjs.org",
     "lint": "eslint ./src",
     "lint-fix": "eslint --fix ./src"
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.47",
-    "@babel/core": "^7.0.0-beta.47",
-    "@babel/plugin-transform-runtime": "^7.0.0-beta.47",
-    "@babel/preset-env": "^7.0.0-beta.47",
-    "@babel/preset-react": "^7.0.0-beta.47",
-    "@babel/preset-stage-0": "^7.0.0-beta.47",
-    "@babel/runtime": "^7.0.0-beta.47",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.3",
-    "chalk": "^2.4.1",
-    "chokidar": "^2.0.3",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-runtime": "^6.26.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-prettier": "^2.9.0",
@@ -34,10 +32,7 @@
     "eslint-plugin-react": "^7.8.2",
     "extract-text-webpack-plugin": "^3.0.2",
     "pre-commit": "^1.2.2",
-    "rimraf": "^2.6.2",
-    "shelljs": "^0.8.2",
-    "through2": "^2.0.3",
-    "vinyl-fs": "^3.0.3"
+    "rimraf": "^2.6.2"
   },
   "pre-commit": [
     "lint"
