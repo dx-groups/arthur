@@ -1,5 +1,5 @@
 # arthur
-基于业务形成的一个框架 ( Inspired by [dva](https://github.com/dvajs/dva) )
+基于业务形成的一个业务框架 ( Inspired by [dva](https://github.com/dvajs/dva) )
 
 ## 安装
 
@@ -14,7 +14,7 @@ yarn
 ```
 ## 用法
 ### module.js
-项目中使用 redux 用来管理状态库，当希望改变状态库的 state 时需要通过 dispatch 发起一个 action ，根据 actionType 调用 reducers 改变 state 。arthur 中一个 [module.js](https://github.com/xubaoshi/arthur/blob/master/examples/arthur/src/modules/Arthur/module.js) 包含了一个功能模块的 store、action、reducer 的实现。
+项目中使用 redux 用来管理状态库，当希望改变状态库的 state 时需要通过 dispatch 发起一个 action ，根据 actionType 调用 reducers 改变 state 。arthur 中一个 [module.js](https://github.com/xubaoshi/arthur/blob/master/examples/arthur/src/modules/Arthur/module.js) 包含了一个功能模块的 store、action、reducer 的实现。
 
 ```
 import pageModule from './page/module'
@@ -26,7 +26,7 @@ export default {
 
   // 不能为空,组件会通过 namespace 访问state
   namespace: 'arthur',
-  // 初始状态 state
+  // 初始状态 state
   state: {
     first: ''
   },
