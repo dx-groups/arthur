@@ -1,6 +1,7 @@
 import { connect as reduxConnect } from 'react-redux'
 // import shallowEqual from './shallowEqual'
 import { isArray, get } from '@dx-groups/utils/lang.js'
+import { equal } from './utils/lang'
 
 function defaultMergeProps(stateProps, dispatchProps, ownProps) {
   return { ...ownProps, ...stateProps, ...dispatchProps }
