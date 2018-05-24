@@ -14,7 +14,7 @@ yarn
 ```
 ## 用法
 ### module.js
-项目中使用 redux 管理状态库，当希望改变状态库的 state 时,使用 dispatch 发起一个 action ，根据 actionType 调用 reducers 改变 state 。arthur 中一个 [module.js](https://github.com/xubaoshi/arthur/blob/master/examples/arthur/src/modules/Arthur/module.js)包含了一个功能模块的 store、action、reducer 的实现。
+项目中使用 redux 管理状态库，当希望改变状态库的 state 时,使用 dispatch 发起一个 action ，根据 actionType 调用 reducers 改变 state 。arthur 中一个 [module.js](https://github.com/xubaoshi/arthur/blob/master/examples/arthur/src/modules/Arthur/module.js) 包含了一个功能模块的 store、action、reducer 的实现。
 
 ```
 import pageModule from './page/module'
