@@ -1,6 +1,16 @@
 {
-  "presets": ["react-app"],
+  "presets": [
+    "env",
+    "stage-0",
+    "react"
+  ],
   "plugins": [
-    ["import", { "libraryName": "antd", "style": "css" }]
-  ]
+    "transform-runtime",
+    "transform-class-properties"
+  ],
+  "env": {
+    "test": {
+      "plugins": [ "istanbul" ]
+    }
+  }
 }
