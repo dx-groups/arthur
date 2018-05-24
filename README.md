@@ -61,10 +61,10 @@ export default {
 ### 组件引入
 ```
 import React, { Component } from 'react'
-// 该 connect 是对 react-redux 中 connect 方法进行了二次封装
+// 该 connect 是对 react-redux 中 connect 方法进行了二次封装
 import { connect } from '@dx-groups/arthur'
 class Page extends Component {
-  render() {
+  render() {
     const { first } = this.props
     return (<div>{ first }</div>)
   }
