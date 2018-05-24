@@ -9,20 +9,20 @@ const app = arthur({
   history: createBrowserHistory()
 })
 
-// init callBack
+// 2. execute initialization codes
 app.init(() => dispatch => {
   
 })
 
-// 2.modules
+// 3. modules
 app.modules([
   arthurModule,
 ])
 
-// 3. Router
+// 4. Router
 app.router(Router)
 
-// 4. Start
+// 5. Start
 app.start('#root')
 
 export default app._store
