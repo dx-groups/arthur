@@ -25,7 +25,7 @@
 
 ## 安装
 
-[![arthur](https://nodei.co/npm/@dx-groups/arthur.png)(https://npmjs.org/package/@dx-groups/arthur)
+[![@dx-groups/arthur](https://nodei.co/npm/@dx-groups/arthur.png)](https://npmjs.org/package/@dx-groups/arthur)
 
 npm
 
