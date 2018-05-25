@@ -2,22 +2,22 @@
 import pageModule from './page/module'
 
 // ===========================> Action Types <=========================== //
-const GET_FIRST_LIST = 'spa/Arthur/GET_FIRST_LIST' // 库存查询
+const GET_PAGE_LIST = 'spa/Arthur/GET_FIRST_LIST' // 库存查询
 
 export default {
   namespace: 'arthur',
 
   state: {
-    first: ''
+    level1: { name: 'old' }
   },
 
   actions: {
-    getFirstList(arg) {
+    getCheckList(arg) {
       return dispatch => {
         dispatch({
-          type: GET_FIRST_LIST,
+          type: GET_PAGE_LIST,
           payload: {
-            name: 'first'
+            name: 'new'
           },
         })
       }
@@ -25,9 +25,9 @@ export default {
   },
 
   reducers: {
-    [GET_FIRST_LIST]: (state, action) => ({
+    [GET_PAGE_LIST]: (state, action) => ({
       ...state,
-      first: action.payload,
+      level1: action.payload,
     })
   },
 

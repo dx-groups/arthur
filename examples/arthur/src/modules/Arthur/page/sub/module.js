@@ -10,7 +10,7 @@ export default {
   namespace: 'sub',
 
   state: {
-    name: 'sub'
+    level3: { name: 'old' }
   },
 
   actions: {
@@ -29,7 +29,7 @@ export default {
   reducers: {
     [GET_PAGE_LIST]: (state, action) => ({
       ...state,
-      data: action.payload.name,
+      level3: action.payload,
     })
   },
 
