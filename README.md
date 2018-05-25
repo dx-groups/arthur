@@ -106,7 +106,7 @@ import { createBrowserHistory } from 'history'
 import Router from './router'
 import arthurModule from '../modules/Arthur/module'
 
-// 1. Initialize
+// 1. initialize
 const app = arthur({
   history: createBrowserHistory()
 })
@@ -121,10 +121,10 @@ app.modules([
   arthurModule,
 ])
 
-// 4. Router
+// 4. router
 app.router(Router)
 
-// 5. Start
+// 5. start
 app.start('#root')
 
 export default app._store
