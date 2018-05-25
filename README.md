@@ -14,7 +14,7 @@
 [travis-url]: https://travis-ci.org/@dx-groups/arthur
 [coveralls-image]: https://img.shields.io/coveralls/@dx-groups/arthur.svg?style=flat-square
 [coveralls-url]: https://coveralls.io/r/@dx-groups/arthur?branch=master
-[gemnasium-image]: http://img.shields.io/gemnasium@dx-groups/arthur.svg?style=flat-square
+[gemnasium-image]: http://img.shields.io/gemnasium/@dx-groups/arthur.svg?style=flat-square
 [gemnasium-url]: https://gemnasium.com/@dx-groups/arthur
 [node-image]: https://img.shields.io/badge/node.js-%3E=_0.10-green.svg?style=flat-square
 [node-url]: http://nodejs.org/download/
