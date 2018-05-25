@@ -27,16 +27,6 @@
 
 [![@dx-groups/arthur](https://nodei.co/npm/@dx-groups/arthur.png)](https://npmjs.org/package/@dx-groups/arthur)
 
-npm
-
-```bash
-  npm install --save @dx-groups/arthur
-```
-yarn
-
-```bash
-  yarn add  @dx-groups/arthur
-```
 ## 用法
 
 ### module.js
