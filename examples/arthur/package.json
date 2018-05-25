@@ -5,9 +5,9 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@dx-groups/arthur": "^1.0.1",
     "@dx-groups/utils": "^1.0.0",
     "and": "^0.0.3",
-    "@dx-groups/arthur": "^1.0.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-redux": "^5.0.7",
@@ -15,14 +15,18 @@
     "react-router-redux": "5.0.0-alpha.9"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
-    "babel-plugin-import": "^1.7.0",
-    "babel-preset-react-app": "^3.1.1",
+    "babel-eslint": "^8.2.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
     "babel-runtime": "^6.26.0",
     "parcel": "^1.8.1"
   },
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel ./src/app/index.html"
   }
 }
