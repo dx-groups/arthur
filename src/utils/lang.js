@@ -1,8 +1,8 @@
 
 import { isArray } from '@dx-groups/utils/lang.js'
 
-// const keyList = Object.keys
-// const hasProp = Object.prototype.hasOwnProperty
+const keyList = Object.keys
+const hasProp = Object.prototype.hasOwnProperty
 
 /**
  * Come with [fast-deep-equal](https://github.com/epoberezkin/fast-deep-equal)
