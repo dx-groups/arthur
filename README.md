@@ -8,22 +8,24 @@
 [![gemnasium deps][gemnasium-image]][gemnasium-url]
 [![npm download][download-image]][download-url]
 
-[npm-image]: http://img.shields.io/npm/v/arthur.svg?style=flat-square
-[npm-url]: http://npmjs.org/package/arthur
-[travis-image]: https://img.shields.io/travis/elephant-fe/arthur.svg?style=flat-square
-[travis-url]: https://travis-ci.org/elephant-fe/arthur
-[coveralls-image]: https://img.shields.io/coveralls/elephant-fe/arthur.svg?style=flat-square
-[coveralls-url]: https://coveralls.io/r/elephant-fe/arthur?branch=master
-[gemnasium-image]: http://img.shields.io/gemnasium/elephant-fe/arthur.svg?style=flat-square
-[gemnasium-url]: https://gemnasium.com/elephant-fe/arthur
+[npm-image]: http://img.shields.io/npm/v/@dx-groups/arthur.svg?style=flat-square
+[npm-url]: http://npmjs.org/package/@dx-groups/arthur
+[travis-image]: https://img.shields.io/travis/elephant-fe/@dx-groups/arthur.svg?style=flat-square
+[travis-url]: https://travis-ci.org/elephant-fe/@dx-groups/arthur
+[coveralls-image]: https://img.shields.io/coveralls/elephant-fe/@dx-groups/arthur.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/elephant-fe/@dx-groups/arthur?branch=master
+[gemnasium-image]: http://img.shields.io/gemnasium/elephant-fe/@dx-groups/arthur.svg?style=flat-square
+[gemnasium-url]: https://gemnasium.com/elephant-fe/@dx-groups/arthur
 [node-image]: https://img.shields.io/badge/node.js-%3E=_0.10-green.svg?style=flat-square
 [node-url]: http://nodejs.org/download/
-[download-image]: https://img.shields.io/npm/dm/arthur.svg?style=flat-square
-[download-url]: https://npmjs.org/package/arthur
+[download-image]: https://img.shields.io/npm/dm/@dx-groups/arthur.svg?style=flat-square
+[download-url]: https://npmjs.org/package/@dx-groups/arthur
 
 基于业务形成的一个业务框架 ( Inspired by [dva](https://github.com/dvajs/dva) )
 
 ## 安装
+
+[![arthur](https://nodei.co/npm/@dx-groups/arthur.png)(https://npmjs.org/package/@dx-groups/arthur)
 
 npm
 
