@@ -8,7 +8,7 @@ export default {
   namespace: 'page',
 
   state: {
-    data: {
+    level2: {
       name: 'old'
     }
   },
@@ -29,7 +29,7 @@ export default {
   reducers: {
     [GET_PAGE_LIST]: (state, action) => ({
       ...state,
-      data: action.payload,
+      level2: action.payload,
     })
   },
 
