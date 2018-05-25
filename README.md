@@ -10,12 +10,12 @@
 
 [npm-image]: http://img.shields.io/npm/v/@dx-groups/arthur.svg?style=flat-square
 [npm-url]: http://npmjs.org/package/@dx-groups/arthur
-[travis-image]: https://img.shields.io/travis/elephant-fe/@dx-groups/arthur.svg?style=flat-square
-[travis-url]: https://travis-ci.org/elephant-fe/@dx-groups/arthur
-[coveralls-image]: https://img.shields.io/coveralls/elephant-fe/@dx-groups/arthur.svg?style=flat-square
-[coveralls-url]: https://coveralls.io/r/elephant-fe/@dx-groups/arthur?branch=master
-[gemnasium-image]: http://img.shields.io/gemnasium/elephant-fe/@dx-groups/arthur.svg?style=flat-square
-[gemnasium-url]: https://gemnasium.com/elephant-fe/@dx-groups/arthur
+[travis-image]: https://img.shields.io/travis/@dx-groups/arthur.svg?style=flat-square
+[travis-url]: https://travis-ci.org/@dx-groups/arthur
+[coveralls-image]: https://img.shields.io/coveralls/@dx-groups/arthur.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/@dx-groups/arthur?branch=master
+[gemnasium-image]: http://img.shields.io/gemnasium@dx-groups/arthur.svg?style=flat-square
+[gemnasium-url]: https://gemnasium.com/@dx-groups/arthur
 [node-image]: https://img.shields.io/badge/node.js-%3E=_0.10-green.svg?style=flat-square
 [node-url]: http://nodejs.org/download/
 [download-image]: https://img.shields.io/npm/dm/@dx-groups/arthur.svg?style=flat-square
@@ -40,7 +40,6 @@ import pageModule from './page/module'
 const GET_FIRST_LIST = 'spa/Arthur/GET_FIRST_LIST' 
 
 export default {
-
   // 不能为空,组件会通过 namespace 访问state
   namespace: 'arthur',
   // 初始状态 state
@@ -67,7 +66,6 @@ export default {
       first: action.payload,
     })
   },
-
   children: [
     // 下级module.js
     pageModule
@@ -77,7 +75,7 @@ export default {
 
 ### 组件引入
 
-```
+```javascript
 import React, { Component } from 'react'
 // 该 connect 是对 react-redux 中 connect 方法进行了二次封装
 import { connect } from '@dx-groups/arthur'
@@ -102,7 +100,7 @@ export default connect(['common.showListSpin', 'arthur.page'],mapStateToProps)(P
 
 ### 整合 module.js
 
-```
+```javascript
 import arthur from '@dx-groups/arthur'
 import { createBrowserHistory } from 'history'
 import Router from './router'
