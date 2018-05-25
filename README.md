@@ -77,7 +77,7 @@ export default {
 
 ```javascript
 import React, { Component } from 'react'
-// 该 connect 是对 react-redux 中 connect 方法进行了二次封装
+// 此 connect 方法是对 react-redux 中 connect 方法进行了二次封装
 import { connect } from '@dx-groups/arthur'
 class Page extends Component {
   render() {
