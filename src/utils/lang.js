@@ -1,4 +1,5 @@
 
+import { isArray } from '@dx-groups/utils/lang.js'
 /**
  * Come with [fast-deep-equal](https://github.com/epoberezkin/fast-deep-equal)
  *
