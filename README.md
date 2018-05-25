@@ -1,22 +1,47 @@
 # arthur
+
+
+
+[![NPM version][npm-image]][npm-url]
+[![build status][travis-image]][travis-url]
+[![Test coverage][coveralls-image]][coveralls-url]
+[![gemnasium deps][gemnasium-image]][gemnasium-url]
+[![npm download][download-image]][download-url]
+
+[npm-image]: http://img.shields.io/npm/v/arthur.svg?style=flat-square
+[npm-url]: http://npmjs.org/package/arthur
+[travis-image]: https://img.shields.io/travis/elephant-fe/arthur.svg?style=flat-square
+[travis-url]: https://travis-ci.org/elephant-fe/arthur
+[coveralls-image]: https://img.shields.io/coveralls/elephant-fe/arthur.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/elephant-fe/arthur?branch=master
+[gemnasium-image]: http://img.shields.io/gemnasium/elephant-fe/arthur.svg?style=flat-square
+[gemnasium-url]: https://gemnasium.com/elephant-fe/arthur
+[node-image]: https://img.shields.io/badge/node.js-%3E=_0.10-green.svg?style=flat-square
+[node-url]: http://nodejs.org/download/
+[download-image]: https://img.shields.io/npm/dm/arthur.svg?style=flat-square
+[download-url]: https://npmjs.org/package/arthur
+
 基于业务形成的一个业务框架 ( Inspired by [dva](https://github.com/dvajs/dva) )
 
 ## 安装
 
 npm
-```
+
+```bash
   npm install --save @dx-groups/arthur
 ```
 yarn
 
-```
+```bash
   yarn add  @dx-groups/arthur
 ```
 ## 用法
+
 ### module.js
+
 项目中使用 redux 管理状态库，当希望改变状态库的 state 时,使用 dispatch 发起一个 action ，根据 actionType 调用 reducers 改变 state 。arthur 中一个 [module.js](https://github.com/xubaoshi/arthur/blob/master/examples/arthur/src/modules/Arthur/module.js) 包含了一个功能模块的 store、action、reducer 的实现。
 
-```
+```javascript
 import pageModule from './page/module'
 
 // actionType
@@ -59,6 +84,7 @@ export default {
 ```
 
 ### 组件引入
+
 ```
 import React, { Component } from 'react'
 // 该 connect 是对 react-redux 中 connect 方法进行了二次封装
@@ -81,6 +107,7 @@ const mapStateToProps = (state) => {
 export default connect(['common.showListSpin', 'arthur.page'],mapStateToProps)(Page)
 
 ```
+
 ### 整合 module.js
 
 ```
