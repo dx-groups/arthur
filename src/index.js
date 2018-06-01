@@ -1,6 +1,5 @@
 import connectArthur from './connect'
 import createArthur from './createArthur'
-import arthurHelper from './helper'
 
 import { createBrowserHistory } from 'history'
 import {
@@ -23,4 +22,3 @@ export default createArthur({
 })
 
 export const connect = connectArthur
-export const helper = arthurHelper
