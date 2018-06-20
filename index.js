@@ -1,4 +1,7 @@
-import arthur, { connect as arthurConnect } from './lib'
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
-export default arthur
-export const connect = arthurConnect
+exports.default = require('./lib').default;
+exports.connect = require('./lib').connect;
+exports.createAction = require('redux-actions').createAction;

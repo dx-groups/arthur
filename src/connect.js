@@ -13,9 +13,7 @@ export default function connect(module, mapStateToProps, mapDispatchToProps) {
       if (isArray(module)) {
         return mapStateToProps(module.reduce((a, c) => ({
           ...a,
-          // [c]: get(state, c)
           [c]: state[c] || get(state, c)
-          // ...get(state, c)
         }), {}))
       }
       const moduleState = get(state, module)

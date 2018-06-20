@@ -12,8 +12,6 @@ import flatten from 'flatten'
 import handleActions from './handleActions'
 import Plugin from './plugin'
 
-// const SEP = '/'
-
 export default function createArthur(createOpts) {
   const {
     mobile,
@@ -104,11 +102,6 @@ export default function createArthur(createOpts) {
       // reducers
       store.asyncReducers[m.namespace] = getReducer(m.reducers, m.state)
       store.replaceReducer(createReducer(store.asyncReducers))
-
-      // subscriptions
-      // if (m.subscriptions) {
-      //   unlisteners[m.namespace] = runSubscriptions(m.subscriptions, m, this, onError)
-      // }
     }
 
     // Unexpected key warn problem:
@@ -257,12 +250,6 @@ export default function createArthur(createOpts) {
 
       // run subscriptions
       const unlisteners = {}
-      // for (const module of this._modules) {
-      //   if (module.subscriptions) {
-      //     unlisteners[module.namespace] = runSubscriptions(module.subscriptions, module, this,
-      //       onErrorWrapper)
-      //   }
-      // }
 
       // inject module after start
       this.module = injectModule.bind(this, createReducer, onErrorWrapper, unlisteners)
@@ -292,13 +279,6 @@ export default function createArthur(createOpts) {
           ...(m.state ? { [finalNs]: getReducer(m.reducers, m.state) } : {}),
           ...getReducers(finalNs, m.children, {})
         }
-        // const finalReducers = {
-        //   ...a,
-        //   [m.namespace]: combineReducers({
-        //     base: getReducer(m.reducers, m.state),
-        //     ...getReducers(m.namespace, m.children, {})
-        //   }),
-        // }
         return finalReducers
       }, reducers) : reducers
     }
@@ -354,29 +334,6 @@ export default function createArthur(createOpts) {
         'app.module: children should be array',
       )
 
-      // function applyNamespace(type) {
-      //   function getNamespacedReducers(reducers) {
-      //     return Object.keys(reducers).reduce((memo, key) => {
-      //       warning(
-      //         key.indexOf(`${namespace}${SEP}`) !== 0,
-      //         `app.module: ${type.slice(0, -1)} ${key} should not be prefixed with namespace ${namespace}`,
-      //       )
-      //       memo[`${namespace}${SEP}${key}`] = reducers[key]
-      //       return memo
-      //     }, {})
-      //   }
-      //
-      //   if (module[type]) {
-      //     if (type === 'reducers' && Array.isArray(module[type])) {
-      //       module[type][0] = getNamespacedReducers(module[type][0])
-      //     } else {
-      //       module[type] = getNamespacedReducers(module[type])
-      //     }
-      //   }
-      // }
-
-      // applyNamespace('reducers')
-
       return module
     }
 
@@ -393,46 +350,5 @@ export default function createArthur(createOpts) {
         return handleActions(reducers || {}, state)
       }
     }
-
-    // function runSubscriptions(subs, module, app, onError) {
-    //   const unlisteners = []
-    //   const noneFunctionSubscriptions = []
-    //   for (const key in subs) {
-    //     if (Object.prototype.hasOwnProperty.call(subs, key)) {
-    //       const sub = subs[key]
-    //       invariant(typeof sub === 'function', 'app.start: subscription should be function')
-    //       const unlistener = sub({
-    //         dispatch: createDispatch(app._store.dispatch, module),
-    //         history: app._history,
-    //       }, onError)
-    //       if (isFunction(unlistener)) {
-    //         unlisteners.push(unlistener)
-    //       } else {
-    //         noneFunctionSubscriptions.push(key)
-    //       }
-    //     }
-    //   }
-    //   return { unlisteners, noneFunctionSubscriptions }
-    // }
-
-    // function prefixType(type, module) {
-    //   const prefixedType = `${module.namespace}${SEP}${type}`
-    //   if ((module.reducers && module.reducers[prefixedType])) {
-    //     return prefixedType
-    //   }
-    //   return type
-    // }
-
-    // function createDispatch(dispatch, module) {
-    //   return (action) => {
-    //     const { type } = action
-    //     invariant(type, 'dispatch: action should be a plain Object with type')
-    //     warning(
-    //       type.indexOf(`${module.namespace}${SEP}`) !== 0,
-    //       `dispatch: ${type} should not be prefixed with namespace ${module.namespace}`,
-    //     )
-    //     return dispatch({ ...action, type: prefixType(type, module) })
-    //   }
-    // }
   }
 }

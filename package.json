@@ -1,6 +1,6 @@
 {
   "name": "@dx-groups/arthur",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "main": "index.js",
   "repository": "https://github.com/elephant-fe/arthur.git",
   "author": "elephant-fe",
@@ -39,12 +39,14 @@
   ],
   "dependencies": {
     "@dx-groups/utils": "^1.0.0",
+    "flatten": "^1.0.2",
     "history": "^4.7.2",
     "invariant": "^2.2.4",
     "is-plain-object": "^2.0.4",
-    "react": "16.2.0",
-    "react-redux": "5.0.5",
-    "react-router-redux": "5.0.0-alpha.9",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.5",
+    "react-router-redux": "^5.0.0-alpha.9",
     "redux": "^3.7.2",
     "redux-actions": "^2.3.2",
     "redux-promise": "^0.5.3",
@@ -53,6 +55,11 @@
   },
   "files": [
     "lib",
-    "index.js"
+    "index.js",
+    "history.js",
+    "redux.js",
+    "router.js",
+    "routerDom.js",
+    "routerRedux.js"
   ]
 }

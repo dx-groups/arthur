@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from '@dx-groups/arthur'
-import { Link } from 'react-router-dom'
+import { Link } from '@dx-groups/arthur/routerDom'
 import * as urls from '../../../../global/urls'
 
 import level3Module from './module'

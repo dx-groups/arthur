@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch } from '@dx-groups/arthur/routerDom'
 import * as urls from '../../global/urls'
 
 import Page from './page'

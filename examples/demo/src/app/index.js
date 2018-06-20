@@ -1,6 +1,6 @@
 
 import arthur from '@dx-groups/arthur'
-import { createBrowserHistory } from 'history'
+import { createBrowserHistory } from '@dx-groups/arthur/history'
 import Router from './router'
 import arthurModule from '../modules/Arthur/module'
 
@@ -11,7 +11,7 @@ const app = arthur({
 
 // 2. execute initialization codes
 app.init(() => dispatch => {
-  
+
 })
 
 // 3. modules

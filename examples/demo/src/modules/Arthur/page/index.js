@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from '@dx-groups/arthur'
-import { Link } from 'react-router-dom'
+import { Link } from '@dx-groups/arthur/routerDom'
 import Module from './module'
 import * as urls from '../../../global/urls'
 
@@ -16,7 +16,7 @@ class Page extends Component {
         <div onClick={this._handleClick}>{this.props.level2.name}</div>
         <Link to={urls.ARTHUR_PAGE_SUB}>sub</Link>
       </div>
-     
+
     )
   }
 }

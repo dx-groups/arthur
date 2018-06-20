@@ -1,9 +1,9 @@
 import * as urls from '../../global/urls'
-import { helper } from '@dx-groups/arthur'
+import { RouteHelper } from '../../utils/helper'
 import BaseModule from './'
 
 const genRoute = (path, breadcrumbName, parentPath) =>
-  helper.RouteHelper.genRoute(path, breadcrumbName, BaseModule, parentPath)
+  RouteHelper.genRoute(path, breadcrumbName, BaseModule, parentPath)
 
 export default [
   genRoute(urls.ARTHUR, 'ARTHUR'),

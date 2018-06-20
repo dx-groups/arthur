@@ -3,8 +3,8 @@ import {
   Route,
   Switch,
   Redirect,
-} from 'react-router-dom'
-import { ConnectedRouter } from 'react-router-redux'
+} from '@dx-groups/arthur/routerDom'
+import { ConnectedRouter } from '@dx-groups/arthur/routerRedux'
 import { LocaleProvider } from 'antd'
 
 import routes from '../routes'
