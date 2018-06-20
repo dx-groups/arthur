@@ -110,7 +110,7 @@ export default connect(['common.showListSpin', 'arthur.page'],mapStateToProps)(P
 
 ```javascript
 import arthur from '@dx-groups/arthur'
-import { createBrowserHistory } from 'history'
+import { createBrowserHistory } from '@dx-groups/arthur/history'
 import Router from './router'
 import arthurModule from '../modules/Arthur/module'
 
@@ -140,3 +140,39 @@ export default app._store
 ```
 
 [DEMO](https://github.com/xubaoshi/arthur/tree/master/examples/arthur)
+
+## API
+
+- @dx-groups/arthur
+  
+  默认输出 arthur
+  
+  另外，还有两个方法
+  
+  - connect 
+  
+    此 connect 方法是对 react-redux 中 connect 方法的二次封装
+    
+  - createAction
+  
+    是对 [redux-actions](https://github.com/redux-utilities/redux-actions) 中 createAction 方法的映射，用于生成 Flux Standard Action
+  
+- @dx-groups/arthur/history
+
+  输出 [history](https://github.com/ReactTraining/history) 的接口
+  
+- @dx-groups/arthur/redux
+
+  输出 [redux](https://github.com/reduxjs/redux) 的接口
+
+- @dx-groups/arthur/router
+
+  输出 [react-router](https://github.com/ReactTraining/react-router) 的接口
+
+- @dx-groups/arthur/routerDom
+
+  输出 [react-router-dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom) 的接口
+
+- @dx-groups/arthur/routerRedux
+
+  输出 [react-router-redux](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-redux) 的接口

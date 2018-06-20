@@ -4,7 +4,7 @@
   "description": "arthur example",
   "license": "MIT",
   "dependencies": {
-    "@dx-groups/arthur": "../../",
+    "@dx-groups/arthur": "^1.0.9",
     "@dx-groups/utils": "^1.0.0",
     "antd": "^3.6.3",
     "react": ">=15",

@@ -1,6 +1,6 @@
 {
   "name": "@dx-groups/arthur",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "main": "index.js",
   "repository": "https://github.com/elephant-fe/arthur.git",
   "author": "elephant-fe",
@@ -46,6 +46,8 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.5",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
     "react-router-redux": "^5.0.0-alpha.9",
     "redux": "^3.7.2",
     "redux-actions": "^2.3.2",

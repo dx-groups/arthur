@@ -8,6 +8,16 @@ function defaultMergeProps(stateProps, dispatchProps, ownProps) {
 }
 
 export default function connect(module, mapStateToProps, mapDispatchToProps) {
+  if (typeof module === 'function') {
+    return reduxConnect(
+      module,
+      mapStateToProps,
+      mapDispatchToProps,
+      {
+        areStatePropsEqual: equal
+      }
+    )
+  }
   return reduxConnect(
     (state) => {
       if (isArray(module)) {

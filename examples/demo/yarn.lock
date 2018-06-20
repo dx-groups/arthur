@@ -78,10 +78,12 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
-"@dx-groups/arthur@../../":
-  version "1.0.8"
+"@dx-groups/arthur@^1.0.9":
+  version "1.0.9"
+  resolved "https://registry.npmjs.org/@dx-groups/arthur/-/arthur-1.0.9.tgz#32d18107341766e0f607c5fdd5138a9dbf61f522"
   dependencies:
     "@dx-groups/utils" "^1.0.0"
+    flatten "^1.0.2"
     history "^4.7.2"
     invariant "^2.2.4"
     is-plain-object "^2.0.4"
