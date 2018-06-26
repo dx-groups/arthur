@@ -2,8 +2,8 @@
   "name": "@dx-groups/arthur",
   "version": "1.1.1",
   "main": "index.js",
-  "repository": "https://github.com/elephant-fe/arthur.git",
-  "author": "elephant-fe",
+  "repository": "https://github.com/dx-groups/arthur.git",
+  "author": "dx-groups",
   "license": "MIT",
   "scripts": {
     "build": "rimraf lib && babel src --out-dir lib",
